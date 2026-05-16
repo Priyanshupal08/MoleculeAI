@@ -1,0 +1,6 @@
+{
+  "name": "MoleculeAI",
+  "description": "AI-powered drug discovery platform for predicting molecular properties, ADMET profiles, and virtual synthesis interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["AI molecular analysis", "Virtual synthesis simulation", "Property prediction"]
+}
