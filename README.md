@@ -1,4 +1,4 @@
-# 🧪 MoleculeStruc: AI-Powered Cheminformatics
+# 🧪 MoleculeAI: AI-Powered Cheminformatics
 
 MoleculeStruc is a modern web application that leverages the power of Google's Gemini AI to provide deep insights into chemical structures. Built with React and Vite, it acts as your personal medicinal chemist and cheminformatics expert.
 
@@ -18,7 +18,7 @@ MoleculeStruc is a modern web application that leverages the power of Google's G
 
 ## 🚀 Live Demo
 
-**[View Live on Vercel](https://molecule-55ucuoev0-priyanshu-pal.vercel.app/)** 
+**[Visit the site](https://molecule-55ucuoev0-priyanshu-pal.vercel.app/)** 
 
 ## 💻 Run Locally
 
