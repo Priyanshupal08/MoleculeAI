@@ -19,7 +19,6 @@ MoleculeStruc is a modern web application that leverages the power of Google's G
 ## 🚀 Live Demo
 
 **[View Live on Vercel](https://molecule-55ucuoev0-priyanshu-pal.vercel.app/)** 
-*(Don't forget to update this link with your actual Vercel URL!)*
 
 ## 💻 Run Locally
 
