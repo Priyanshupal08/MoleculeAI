@@ -1,6 +1,10 @@
 import { GoogleGenAI, Type } from "@google/genai";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
+function getAI(): GoogleGenAI | null {
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) return null;
+  return new GoogleGenAI({ apiKey });
+}
 
 export interface MoleculeInsight {
   name: string;
@@ -37,6 +41,11 @@ export interface SynthesisInsight {
 
 export const geminiService = {
   async identifyMolecule(smiles: string): Promise<MoleculeInsight | null> {
+    const ai = getAI();
+    if (!ai) {
+      console.warn("GEMINI_API_KEY is not configured.");
+      return null;
+    }
     try {
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
@@ -98,6 +107,11 @@ export const geminiService = {
   },
 
   async predictSynthesis(smilesA: string, smilesB: string): Promise<SynthesisInsight | null> {
+    const ai = getAI();
+    if (!ai) {
+      console.warn("GEMINI_API_KEY is not configured.");
+      return null;
+    }
     try {
       const response = await ai.models.generateContent({
         model: "gemini-3-flash-preview",
